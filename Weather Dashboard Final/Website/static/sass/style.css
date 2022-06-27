@@ -25,7 +25,7 @@ main {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  row-gap: 25px;
   background-color: #666666;
   justify-items: center;
 }
@@ -52,6 +52,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.wet {
+  font-size: x-large;
+  color: aliceblue;
 }
 
 .header {
@@ -107,6 +112,11 @@ main {
   width: 55px;
 }
 
+.logo-box h2 {
+  color: #e8f2da;
+  cursor: pointer;
+}
+
 .search-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +127,14 @@ main {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.search-bar > form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .search-bar input[type="text"] {
@@ -164,16 +182,21 @@ main {
   color: black;
 }
 
+.bulma-box {
+  left: 40%;
+  width: 20%;
+}
+
 .weather-box {
   margin-left: 20px;
   padding: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50px 1fr;
       grid-template-columns: 50px 1fr;
-  width: 330px;
-  height: 150px;
+  width: 80%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -184,5 +207,26 @@ main {
 
 .box-content {
   padding: 0px 30px;
+}
+
+.close {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 6px;
+  position: relative;
+  left: 0px;
+  bottom: -16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #000;
+  background-color: rgba(250, 100, 130, 0.57);
+  -webkit-transform: background-color 400ms ease-in-out;
+          transform: background-color 400ms ease-in-out;
+}
+
+.close:hover {
+  color: #000;
+  background-color: rgba(246, 64, 100, 0.896);
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,10 @@
     justify-content: center;
     align-content: center;
 
+    & > form {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     input[type = "text"]{
         width: 100%;
         border: 0;
@@ -46,4 +50,9 @@
         }
 
     }
+}
+
+.bulma-box {
+    left: 40%;
+    width: 20%;
 }

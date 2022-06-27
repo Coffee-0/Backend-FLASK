@@ -22,7 +22,7 @@ a:hover {
 main {
   display: grid;
   grid-template-columns:repeat(3, 1fr);
-  gap: 10px;
+  row-gap: 25px;  
   background-color: rgb(102, 102, 102);
 
   justify-items: center;
@@ -46,3 +46,7 @@ main {
     }
   }
   
+  .wet {
+    font-size: x-large;
+    color: aliceblue;
+  }

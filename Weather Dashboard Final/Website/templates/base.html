@@ -17,25 +17,28 @@
 <body>
     <header class="header">
         <nav class="flex flex-jc-sb flex-ai-c">
-            <a href="#">
-                <img src="../static/images/Weatherfavi.svg" alt="weather icon" class="logo">
-            </a>
+            <div class="flex flex-ai-c">
+                <h2 class="wet">Weather</h2>
+                <a href="#" class="weth">
+                    <img src="../static/images/Weatherfavi.svg" alt="weather icon" class="logo">
+                </a>
+            </div>
 
             <div class="header__links">
                 <a href="/">Home</a>
-                <a href="https://openweathermap.org/">API</a>
-                <a href="#">Github</a>
+                <a href="https://openweathermap.org/" target="_blank">API</a>
+                <a href="https://github.com/Coffee-0/Backend-FLASK/tree/main/Weather%20Dashboard%20Final" target="_blank">Github</a>
                 <a href="#">Logout</a>
             </div>
         </nav>
     </header>
     <div class="search-bar">
         <form method="POST" class="flex flex-ai-c">
-            <label for="city"></label>
             <input type="text", class="city-name", name="city" placeholder="City">
             <button type="submit">Add</button>
         </form>
     </div>
+
     <main>
         {% block content %}
         {% endblock %}
