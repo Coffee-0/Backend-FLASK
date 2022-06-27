@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/sass/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="flex flex-jc-sb flex-ai-c">
+            <a href="#">
+                <img src="../static/images/Weatherfavi.svg" alt="weather icon" class="logo">
+            </a>
+
+            <div class="header__links">
+                <a href="/">Home</a>
+                <a href="https://openweathermap.org/" target="_blank">API</a>
+                <a href="#">Github</a>
+                <a href="#">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+    <div class="search-bar">
+        <form method="POST" class="flex flex-ai-c">
+            <label for="city"></label>
+            <input type="text", class="city-name", name="city" placeholder="City">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <main>
+        <div class="weather-box">
+            <div class="box-logo">
+                <img src="http://openweathermap.org/img/wn/10d.png" alt="Weather-Logo">
+            </div>
+            <div class="box-content">
+                <h2>Las Vegas</h2>
+                <p>50° F</p>
+                <p>Cloudy and hot</p>
+            </div>
+        </div>
+
+        <div class="weather-box">
+            <div class="box-logo">
+                <img src="http://openweathermap.org/img/wn/10d.png" alt="Weather-Logo">
+            </div>
+            <div class="box-content">
+                <h2>Antartica</h2>
+                <p>-29° F</p>
+                <p>Freezing</p>
+            </div>
+        </div>
+
+        <div class="weather-box">
+            <div class="box-logo">
+                <img src="http://openweathermap.org/img/wn/10d.png" alt="Weather-Logo">
+            </div>
+            <div class="box-content">
+                <h2>New York</h2>
+                <p>10° F</p>
+                <p>Cold as Fuck Boii</p>
+            </div>
+        </div>
+
+        <div class="weather-box">
+            <div class="box-logo">
+                <img src="http://openweathermap.org/img/wn/10d.png" alt="Weather-Logo">
+            </div>
+            <div class="box-content">
+                <h2>Las Vegas</h2>
+                <p>50° F</p>
+                <p>Cloudy and hot</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
